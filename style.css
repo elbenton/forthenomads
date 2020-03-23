@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (max-width: 768px) {
     body {
         margin: 0;
         padding: 0;
@@ -222,7 +222,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
 }
 
