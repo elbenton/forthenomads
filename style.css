@@ -1,0 +1,242 @@
+@media (min-width: 640px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        background-attachment: fixed;
+        background-position: center bottom; 
+        background-repeat: no-repeat;
+        color: #cdcdcd;
+        font-family: 'Noto Sans JP', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    #menuToggle{
+        display: block;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    #menuToggle a{
+        text-decoration: none;
+        color: #232323;
+        
+    }
+    
+    #menuToggle a:active {
+        color: #dbb552;
+    }
+    
+    
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0; 
+        z-index: 2; 
+        -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #dbb552;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child    {
+        transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    
+    
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: black;
+    }
+    
+    
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background: #dbb552;
+        opacity: 0.9;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li {
+        padding: 10px 0;
+        font-size: 22px;
+    }
+    
+    
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .header-photo>img {
+        width: 25em;
+        height: auto;
+    }
+
+    .divider-link {
+        height: 2em;
+        width: 100%;
+        text-align: center;
+        background-color: #f9fada;
+    }
+
+    .divider-link a {
+        color: black;
+        text-decoration: none;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 1em;
+        
+    }
+
+    .bio {
+        margin-top: 5em;
+        background-image: url("images/lights.JPG");
+        background-size: 100%;
+        background-position: center;
+        margin-bottom: 5em;
+
+    }
+
+    .bio-text {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color:#f9fada;
+        opacity: 0.8;
+  
+    }
+
+    .bio-text h1 {
+        text-align: center;
+    }
+
+    .bio-text p {
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gfm-embed {
+        width: 78%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5em;
+    }
+
+    .about-video {
+        text-align: center;
+        margin-top: 5em;
+    }
+
+    .about {
+        margin-top: 5em;
+        background-image: url("images/hitmebabyonemoretime.JPG");
+        background-size: 1050px;
+        background-position: center;
+        margin-bottom: 5em;
+        background-repeat: no-repeat;
+        opacity: 0.7;
+    }
+
+    .about-text {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color:#f9fada;
+        opacity: 0.8;
+
+    }
+
+    .about-text h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .about-text p {
+        letter-spacing: 0.05em;
+        line-height: 2em;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        color: black;
+    }
+
+    .bolder {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1280px) {
+
+}
+
+/*
+colors used:
+black
+#dbb552 (gold)
+#fbfcd4 (off-white)
+*/
